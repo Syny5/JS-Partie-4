@@ -31,13 +31,13 @@ var IsString = function (texte) {
     return isNaN(texte);
 }
 var AfficherExtensionString = function (texte) {
-    return texte.match();
+    return texte.slice(-3);
 }
 var NombreEspaceString = function (texte) {
     return 'A completer';
 }
 var InverseString = function (texte) {
-    return 'A completer';
+    return texte.slice();
 }
 
 /**
