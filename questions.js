@@ -34,23 +34,25 @@ var AfficherExtensionString = function (texte) {
     return texte.slice(-3);
 }
 var NombreEspaceString = function (texte) {
-    return 'A completer';
+// split crée une liste des caractères demandés, le length permet, lui, de calculer la taille
+    return texte.split(' ').length -1;
 }
 var InverseString = function (texte) {
-    return texte.slice();
+  // split pour créer une liste, reverse pour l'inverser, join pour recoller les morceaux
+    return texte.split('').reverse().join('');
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 var calculPuissance = function (x, y) {
-    return 'A completer';
+    return Math.pow(x, y);
 }
 var valeurAbsolue = function (nombre) {
-    return 'A completer';
+    return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    return 'A completer';
+    return array.every(Math(abs));
 }
 var sufaceCercle = function (rayon) {
     return 'A completer';
