@@ -52,14 +52,15 @@ var valeurAbsolue = function (nombre) {
     return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    return array.every(Math(abs));
-}
+    return array.forEach(Math.abs());
+  }
 var sufaceCercle = function (rayon) {
-    return 'A completer';
+    return Math.round(Math.PI * rayon * rayon);
 }
 var hypothenuse = function (ab, ac) {
-    return 'A completer';
+    return Math.hypot(ab, ac);
 }
 var calculIMC = function (poids, taille) {
-    return 'A completer';
+    var imc = (poids / ( taille * taille )).toPrecision(4);
+    return Number(imc);
 }
