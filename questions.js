@@ -52,7 +52,7 @@ var valeurAbsolue = function (nombre) {
     return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    return array.forEach(Math.abs());
+    return return Array.from(array,x=>Math.abs(x));
   }
 var sufaceCercle = function (rayon) {
     return Math.round(Math.PI * rayon * rayon);
