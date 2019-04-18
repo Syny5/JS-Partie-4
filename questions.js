@@ -31,7 +31,7 @@ var IsString = function (texte) {
     return isNaN(texte);
 }
 var AfficherExtensionString = function (texte) {
-    return texte.slice(-3);
+    return texte.split('.').pop();
 }
 var NombreEspaceString = function (texte) {
 // split crée une liste des caractères demandés, le length permet, lui, de calculer la taille
@@ -52,8 +52,9 @@ var valeurAbsolue = function (nombre) {
     return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    return Array.from(array,x=>Math.abs(x));
-  }
+    var valeur = array.map(Math.abs);
+    return valeur;
+}
 var sufaceCercle = function (rayon) {
     return Math.round(Math.PI * rayon * rayon);
 }
