@@ -62,6 +62,6 @@ var hypothenuse = function (ab, ac) {
     return Math.hypot(ab, ac);
 }
 var calculIMC = function (poids, taille) {
-    var imc = (poids / ( taille * taille )).toPrecision(4);
+    var imc = (poids / ( taille * taille )).toFixed(2);
     return Number(imc);
 }
